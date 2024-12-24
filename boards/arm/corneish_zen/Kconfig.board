@@ -14,11 +14,11 @@ config BOARD_CORNEISH_ZEN_V1_RIGHT
     select BOARD_CORNEISH_ZEN_RIGHT
 
 config BOARD_CORNEISH_ZEN_V3_LEFT
-    bool "corneish zen left v2"
+    bool "corneish zen left v3"
     depends on SOC_NRF52840_QIAA
     select BOARD_CORNEISH_ZEN_LEFT
 
 config BOARD_CORNEISH_ZEN_V3_RIGHT
-    bool "corneish zen right v2"
+    bool "corneish zen right v3"
     depends on SOC_NRF52840_QIAA
     select BOARD_CORNEISH_ZEN_RIGHT

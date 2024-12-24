@@ -46,7 +46,6 @@
         compatible = "zmk,ext-power-generic";
         label = "EXT_POWER";
         control-gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
-        init-delay-ms = <50>;
     };
 
     vbatt: vbatt {
@@ -56,6 +55,15 @@
         full-ohms = <(3000000 + 1000000)>;
     };
 
+};
+
+&gpio0 {
+    status = "okay";
+    epd-power {
+        gpio-hog;
+        gpios = <07 GPIO_ACTIVE_HIGH>;
+        output-high;
+    };
 };
 
 &pinctrl {
